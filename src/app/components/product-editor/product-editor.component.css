@@ -1,6 +1,7 @@
 .prod-editor {
     display: grid;
     place-items: center;
+    grid-gap: 1rem;
 }
 
 .form {
@@ -18,4 +19,5 @@
 .action-buttons {
     display: flex;
     flex-direction: row;
+    grid-gap: 2rem;
 }

@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     place-content: start;
     box-shadow: 1px 2px 4px 2px rgb(0 0 0 / 10%);
-    max-height: 31rem;
+    max-height: 35rem;
 }
 
 .product-list {

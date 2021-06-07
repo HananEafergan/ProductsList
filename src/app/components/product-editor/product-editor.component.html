@@ -1,20 +1,28 @@
 <div class="prod-editor">
     <form class="form" [formGroup]="productForm">
-        <div class="form-input">
-            Product name:<input type="text" formControlName="Name">
-        </div>
-        <div class="form-input">
-            Description: <input type="text" formControlName="Description">
-        </div>
-        <div class="form-input">
-            Price: <input type="number" formControlName="Price">
-        </div>
-        <div class="form-input">
-            Image path: <input type="text" formControlName="Image">
-        </div>
+        <mat-form-field appearance="legacy">
+            <mat-label>Product name</mat-label>
+            <input matInput formControlName="Name" placeholder="Name">            
+          </mat-form-field>
+          <mat-form-field appearance="legacy">
+            <mat-label>Description</mat-label>
+            <input matInput formControlName="Description" placeholder="Description">            
+          </mat-form-field>
+          <mat-form-field appearance="legacy">
+            <mat-label>Price</mat-label>
+            <input matInput type="number" formControlName="Price" placeholder="Price">            
+          </mat-form-field>
+          <mat-form-field appearance="legacy">
+            <mat-label>Image path</mat-label>
+            <input matInput formControlName="Image" placeholder="Image">            
+          </mat-form-field>        
     </form>
     <div class="action-buttons">
-        <button class="btn btn-primary" [disabled]="productForm.invalid" (click)="saveProduct()">Save</button>
-        <button class="btn btn-danger" (click)="cancelEdit()">Cancel</button>
+        <button mat-fab color="primary" [disabled]="productForm.invalid" (click)="saveProduct()" aria-label="Example icon button with an add icon">
+            <mat-icon>save</mat-icon>
+        </button>
+        <button mat-fab color="warn" (click)="cancelEdit()" aria-label="Example icon button with an add icon">
+            <mat-icon>cancel</mat-icon>
+        </button>
     </div>
 </div>

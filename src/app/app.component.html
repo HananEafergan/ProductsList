@@ -1,5 +1,7 @@
 <div class="add-button">
-  <button class="btn btn-success" (click)="addProd()">Add</button>
+  <button mat-fab color="primary" (click)="addProd()" aria-label="button with an add icon">
+    <mat-icon>add</mat-icon>
+  </button>
 </div>
 <div class="custom-grid-container">   
   <div class="product-list">
@@ -8,7 +10,9 @@
       <div>{{item.Description}}</div>
       <div>Price: {{item.Price}}$</div>
       <img class="item-img" [src]="item.Image" onerror="this.src='assets/AltImage.png'">
-      <button class="btn btn-primary" [disabled]="showProdEditor" (click)="editProduct(item, i)">Details</button>
+      <button mat-fab color="accent" [disabled]="showProdEditor" (click)="editProduct(item, i)" aria-label="button with an edit icon">
+        <mat-icon>edit</mat-icon>
+    </button>
     </div>
   </div>
   
