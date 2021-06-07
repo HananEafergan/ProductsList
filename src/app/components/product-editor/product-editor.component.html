@@ -1,0 +1,20 @@
+<div class="prod-editor">
+    <form class="form" [formGroup]="productForm">
+        <div class="form-input">
+            Product name:<input type="text" formControlName="Name">
+        </div>
+        <div class="form-input">
+            Description: <input type="text" formControlName="Description">
+        </div>
+        <div class="form-input">
+            Price: <input type="number" formControlName="Price">
+        </div>
+        <div class="form-input">
+            Image path: <input type="text" formControlName="Image">
+        </div>
+    </form>
+    <div class="action-buttons">
+        <button class="btn btn-primary" [disabled]="productForm.invalid" (click)="saveProduct()">Save</button>
+        <button class="btn btn-danger" (click)="cancelEdit()">Cancel</button>
+    </div>
+</div>

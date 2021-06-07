@@ -1,0 +1,44 @@
+.add-button {
+    margin: 2rem 0 0 3rem;
+}
+
+.item-img {
+    max-width: 20rem;
+}
+
+.custom-grid-container {
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product-form {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    place-content: start;
+    box-shadow: 1px 2px 4px 2px rgb(0 0 0 / 10%);
+    max-height: 31rem;
+}
+
+.product-list {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    place-content: start;
+}
+
+.list-item {
+    padding: 1rem;
+    box-shadow: 1px 2px 4px 2px rgb(0 0 0 / 10%);
+    display: grid;
+    place-content: space-between;
+    place-items: flex-start;
+    height: 40rem;
+    width: 25rem;
+    grid-gap: 1rem;
+    margin: 1rem;
+}
